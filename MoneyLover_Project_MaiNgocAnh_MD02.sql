@@ -8,7 +8,7 @@ CREATE TABLE Users (
     Username VARCHAR(50),
     Email VARCHAR(100),
     Password_hash VARCHAR(255),
-    Created_at DATETIME DEFAULT GETDATE(),        --tu dong chËn thoi gian hien tai khi tao dÚng du lieu
+    Created_at DATETIME DEFAULT GETDATE(),        --tu dong ch√®n thoi gian hien tai khi tao d√≤ng du lieu
     Updated_at DATETIME DEFAULT GETDATE()
 )
 
@@ -142,7 +142,7 @@ CREATE TABLE ExchangeRate (
     FromCurrency VARCHAR(10) NOT NULL,
     ToCurrency VARCHAR(10) NOT NULL,
     Rate DECIMAL(18,6) NOT NULL,         
-    EffectiveDate DATE NOT NULL,            -- ng‡y ti gi· cÛ hieu l?c
+    EffectiveDate DATE NOT NULL,            -- ng√†y ti gi√° c√≥ hieu l?c
     Created_at DATETIME DEFAULT GETDATE(),
     Updated_at DATETIME DEFAULT GETDATE()
 )
